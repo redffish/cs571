@@ -1,0 +1,43 @@
+.sidebar {
+  width: calc(20vw - 5px);
+  margin-left: 5px;
+  height: calc(100vh - 10px);
+  position: fixed;
+}
+
+.star {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+}
+
+.star-disabled {
+  filter: grayscale(100%);
+}
+
+.rating {
+  font-weight: 700;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 0;
+}
+
+.custom-btn {
+  background: #F8F8F8;
+  color: #0379A8;
+  border: 2px solid #0379A8;
+  font-weight: 500;
+}
+
+.custom-btn:hover, .custom-btn:focus {
+  background: #0379A8;
+  color: #F8F8F8;
+  border: 2px solid #0379A8;
+  font-weight: 500;
+}

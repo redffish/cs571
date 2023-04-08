@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+	<main role="main">
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+			<meta name="description" content="Badger Shop">
+			<meta name="author" content="Cole Nelson, Ilkyu Ju, Sujitha Perumal">
+			<title>JavaScript Alpha: Badger Shop</title>
+			<link rel="stylesheet" href="styles.css">
+		</head>
+		<body>
+			<img src="logo.png" height="200px" width="auto">
+			<h1>Badger Shop</h1>
+			<h2>Welcome!</h2>
+			<p>Welcome to Badger Shop! We are dedicated to bringing our customers the lowest prices on quality products.</p>
+			<p>Contact us using our form. The form will appear if you click the button!</p>
+			<form>
+				<button type="submit" formaction='javascript:showMessageForm();' style="margin-bottom: 10px">Contact us</button>
+			</form>
+			<div id="messageArea" style="visibility: hidden;">
+				<p>Please type your message below!</p>
+				<textarea id="messageField" rows="8" cols="36"></textarea>
+				<form>
+					<button type="submit" formaction='javascript:sendMessage();'>Send Message</button>
+				</form>
+			</div>
+			<br>
+			<br>
+			<br>
+			<h2>Flash Sale!</h2>
+			<p name="flashSale">5lbs of brazil nuts for just $9.99 today — we badgers love 'em!</p>
+			<form>
+				<button class="rounded" type="submit" formaction='javascript:addPizzazz();'>Add Pizzazz</button>
+			</form>
+			<br>
+			<br>
+			<br>
+			<h2>Your Account</h2>
+			<p>Current Gift Card Balance:</p>
+			<p id="balance">38.92</p>
+			<p>Enter new balance:</p>
+			<input style="margin-bottom: 10px" id="balanceInput" type="text"></input>
+			<form>
+				<button type="submit" formaction='javascript:saveBalance();' style="margin-bottom: 10px">Save Balance</button>
+			</form>
+
+			<form>
+				<button type="submit" formaction='javascript:printBalance();' style="margin-bottom: 10px">Print Balance</button>
+			</form>
+			
+			<form>
+				<button type="submit" formaction='javascript:alertBalance();'>Alert Balance</button>
+			</form>
+			<br>
+			<br>
+			<br>
+			<h2>Family Plan Payments</h2>
+			<p id="familyPlanDescription">You are currently subscribed to our Family Plan. Below is the amount due for each family member.</p>
+			<table id="familyPlanAmountDue" style="margin-bottom: 10px">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Amount Due</th>
+					</tr>
+				</thead>
+				<tbody>
+					
+				</tbody>
+			</table>
+			<form>
+				<button type="submit" formaction='javascript:loadFamilyPlanPaymentsData();'>Load Family Plan Payment Data</button>
+			</form>
+			<br>
+			<br>
+			<br>
+			<h2>My Orders</h2>
+			<table id="myOrders" style="margin-bottom: 10px">
+				<thead>
+					<tr>
+						<th>Date Purchased</th>
+						<th>Product Name</th>
+						<th>Amount Paid</th>
+					</tr>
+				</thead>
+				<tbody>
+					
+				</tbody>
+			</table>
+			<form>
+				<button type="submit" formaction='javascript:addOrderRows();' style="margin-bottom: 10px">Add Order Rows</button>
+			</form>
+			<form>
+				<button type="submit" formaction='javascript:clearOrderRows();'>Clear Rows</button>
+			</form>
+			<br>
+			<br>
+			<br>
+			<!-- FOOTER -->
+			<footer>
+				<p><a href="#">Back to top</a></p>
+			</footer>
+	</main>
+	<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+	<script src="script.js"></script>
+	</body>
+</html>

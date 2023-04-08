@@ -1,0 +1,51 @@
+th {
+    padding: 5px 5px 5px 5px;
+}
+
+td {
+    padding: 5px 5px 5px 5px;
+}
+
+/* .navbar-brand
+{
+  font-family: 'Lato', sans-serif;
+  color:white;
+  font-size: larger;
+  margin: 0px;
+} */
+
+body::before {
+  display: block;
+  content: " ";
+  height: 80px
+}
+
+#account::before {
+  display: block;
+  content: " ";
+  height: 80px
+}
+
+#order::before {
+  display: block;
+  content: " ";
+  height: 80px
+}
+
+#family-plan::before {
+  display: block;
+  content: " ";
+  height: 80px
+}
+
+#contact-us::before {
+  display: block;
+  content: " ";
+  height: 80px
+}
+
+/* #contact-us::after {
+  display: block;
+  content: " ";
+  height: 80px
+} */
